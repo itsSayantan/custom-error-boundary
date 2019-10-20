@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Custom error boundary component for react.js applications.",
   "main": "./CEB.js",
-  "private": true,
+  "author": "Sayantan Ghosh <sayantan.ghosh03@gmail.com> (https://github.com/itsSayantan)",
+  "private": false,
   "dependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
