@@ -1,8 +1,8 @@
 {
   "name": "custom-error-boundary",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom error boundary component for react.js applications.",
-  "main": "./CEB.js",
+  "main": "./lib/CEB.js",
   "author": "Sayantan Ghosh <sayantan.ghosh03@gmail.com> (https://github.com/itsSayantan)",
   "private": false,
   "dependencies": {
