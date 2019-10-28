@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.basic-native-fallback-ui-wrapper {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: #ffdddf;
+    color: #bb343f;
+    padding: 5px;
+    border: 2px solid #bb343f;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #888999;
+}
