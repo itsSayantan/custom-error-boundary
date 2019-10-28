@@ -1,14 +1,32 @@
 {
   "name": "custom-error-boundary",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Custom error boundary component for react.js applications.",
   "main": "./lib/CEB.js",
+  "keywords": [
+    "react",
+    "custom-error-boundary",
+    "custom",
+    "error",
+    "boundary",
+    "error-boundary",
+    "error",
+    "boundary",
+    "reactjs",
+    "render-props",
+    "render",
+    "props",
+  ],
   "author": "Sayantan Ghosh <sayantan.ghosh03@gmail.com> (https://github.com/itsSayantan)",
   "private": false,
   "dependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsSayantan/custom-error-boundary.git"
   },
   "scripts": {
     "start": "react-scripts start",
