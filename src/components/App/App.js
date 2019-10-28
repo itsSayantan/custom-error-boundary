@@ -1,3 +1,7 @@
+/**
+ * This file is just to demonstrate the usage of this library
+ */
+
 import React from 'react';
 import './App.css';
 import CEB from '../CEB/CEB';
