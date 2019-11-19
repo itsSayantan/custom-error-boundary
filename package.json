@@ -30,7 +30,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "webpack",
+    "build": "webpack && cp ./index.d.ts ./lib/index.d.ts",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
