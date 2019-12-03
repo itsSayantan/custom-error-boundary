@@ -4,12 +4,12 @@ Custom error boundary component for react.js applications.
 
 # Installation
 
-```npm install --save custom-error-boundary```
+```$ npm install --save custom-error-boundary```
 
 # Usage
 Consider you have a component called ```App``` component which looks like this:
 
-```
+```js
 import React from 'react';
 import './App.css';
 
@@ -45,7 +45,7 @@ If the error is thrown due to faulty props, the page will break. Now we will try
 
 Now, the above ```App``` looks like this:
 
-```
+```js
 import React from 'react';
 import './App.css';
 import CEB from 'custom-error-boundary';
