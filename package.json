@@ -1,61 +1,67 @@
 {
-  "name": "custom-error-boundary",
-  "version": "1.0.2",
-  "description": "Custom error boundary component for react.js applications.",
-  "main": "./lib/CEB.js",
-  "keywords": [
-    "react",
-    "custom-error-boundary",
-    "custom",
-    "error",
-    "boundary",
-    "error-boundary",
-    "error",
-    "boundary",
-    "reactjs",
-    "render-props",
-    "render",
-    "props"
-  ],
-  "author": "Sayantan Ghosh <sayantan.ghosh03@gmail.com> (https://github.com/itsSayantan)",
-  "private": false,
-  "dependencies": {
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/itsSayantan/custom-error-boundary.git"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "webpack",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+    "name": "custom-error-boundary",
+    "version": "2.0.0",
+    "description": "Custom error boundary component for react.js applications.",
+    "main": "./dist/CEB.js",
+    "keywords": [
+        "react",
+        "custom-error-boundary",
+        "custom",
+        "error",
+        "boundary",
+        "error-boundary",
+        "error",
+        "boundary",
+        "reactjs",
+        "render-props",
+        "render",
+        "props"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.4",
-    "css-loader": "^3.2.0",
-    "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2"
-  }
+    "author": "Sayantan Ghosh <sayantan.ghosh03@gmail.com> (https://github.com/itsSayantan)",
+    "private": false,
+    "dependencies": {
+        "react": "^16.10.2",
+        "react-dom": "^16.10.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/itsSayantan/custom-error-boundary.git"
+    },
+    "scripts": {
+        "test": "jest --no-watch",
+        "lint": "eslint .",
+        "start": "NODE_ENV='development' webpack-dev-server --config ./config/webpack.config.js",
+        "react:build": "NODE_ENV='production' webpack --config ./config/webpack.config.js",
+        "export:build": "NODE_ENV='production' webpack --config ./config/webpack.config.js"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.7.0",
+        "@babel/core": "^7.7.2",
+        "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+        "@babel/preset-env": "^7.7.1",
+        "@babel/preset-react": "^7.7.0",
+        "@types/react": "^16.9.11",
+        "@types/react-dom": "^16.9.4",
+        "@types/uuid": "^3.4.6",
+        "autoprefixer": "^9.7.2",
+        "babel-loader": "^8.0.6",
+        "css-loader": "^3.2.0",
+        "eslint": "^6.6.0",
+        "husky": "^3.0.9",
+        "jest": "^24.9.0",
+        "node-sass": "^4.13.0",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^8.0.0",
+        "style-loader": "^1.0.0",
+        "ts-loader": "^6.2.1",
+        "typescript": "^3.7.2",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.10",
+        "webpack-dev-server": "^3.9.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn test"
+        }
+    }
 }

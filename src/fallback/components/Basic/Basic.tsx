@@ -1,8 +1,10 @@
 import React from 'react';
 
-import './Basic.css';
+import { BasicPropsType } from './model';
 
-const Basic = () => {
+import './Basic.scss';
+
+const Basic = (props: BasicPropsType): JSX.Element => {
     return (
         <div className="basic-native-fallback-ui-wrapper">
             <p>Some error occured here...</p>

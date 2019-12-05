@@ -1,4 +1,10 @@
 src
-.prettierrc
+config
+__test__
 .babelrc
-webpack.config.js
+.gitignore
+postcss.config.js
+tsconfig.json
+yarn.lock
+yarn-error.log
+./index.d.ts
