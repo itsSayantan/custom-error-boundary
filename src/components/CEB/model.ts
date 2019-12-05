@@ -12,7 +12,3 @@ export type CEBPropsType = FallbackUIType & ThemeType;
 export type CEBStateType = {
     hasError: boolean;
 };
-
-const CEB = (props: CEBPropsType) => JSX.Element;
-
-export default CEB;
