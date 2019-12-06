@@ -4,34 +4,30 @@ Custom error boundary component for react.js applications.
 
 # Installation
 
-`npm install --save custom-error-boundary`
+`$ npm install --save custom-error-boundary`
 
 # Usage
 
 Consider you have a component called `App` component which looks like this:
 
-```
+```js
 import React from 'react';
 import './App.css';
 
 function App() {
-  return (
-      <Divider dividend={6} divisor={0} />
-  );
+    return <Divider dividend={6} divisor={0} />;
 }
 
 function Divider(props) {
-  const result = props.dividend / props.divisor
+    const result = props.dividend / props.divisor;
 
-  if (isNaN(result)) {
-    throw new Error('Result should be a number: ' + errorSuffixString)
-  } else if (result === Infinity) {
-    throw new Error('Result cannot be Infinity: ' + errorSuffixString)
-  }
+    if (isNaN(result)) {
+        throw new Error('Result should be a number: ' + errorSuffixString);
+    } else if (result === Infinity) {
+        throw new Error('Result cannot be Infinity: ' + errorSuffixString);
+    }
 
-  return (
-    <p>The result after divion is: {result}</p>
-  )
+    return <p>The result after divion is: {result}</p>;
 }
 
 export default App;
@@ -104,9 +100,15 @@ For adding a theme, follow these steps:
 -   Add your component under `./src/fallback/components`. You can take the example of the `Basic` component in the same folder.
 -   Import and export your component in the `./src/fallback/index.js` file.
 -   In order to test the compoent, follow these steps:
+
     -   Run `npm run build` inside this (custom-error-boundary) project,
     -   Create another project (example: Test) and implement a simple component like the `App` component shown above in the [Usage](#usage) section.
     -   Copy the `lib` folder from the `custom-error-boundary` project and replace the `lib` folder inside the `./node_modules/custom-error-boundary` folder.
     -   Send necessary props in your `CEB` to test your results.
     -   Created fallback compoent should be functional.
-    -   The created components do not support props as of now.
+    -   # The created components do not support props as of now.
+
+-   Clone this repository.
+-   Add your component under `./src/fallback/components`. You can take the example of the `Basic` component in the same folder.
+-   Import and export your component in the `./src/fallback/index.js` file.
+-   In order to test the compoent, follow these steps: - Run `npm run build` inside this (custom-error-boundary) project, - Create another project (example: Test) and implement a simple component like the `App` component shown above in the [Usage](#usage) section. - Copy the `lib` folder from the `custom-error-boundary` project and replace the `lib` folder inside the `./node_modules/custom-error-boundary` folder. - Send necessary props in your `CEB` to test your results. - Created fallback compoent should be functional. - The created components do not support props as of now.
