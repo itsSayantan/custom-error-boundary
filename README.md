@@ -95,7 +95,6 @@ Notice that a `CustomFallbackUI` component has been added. This is because we ar
 Fork the project, make changes and send me a pull request.
 
 For adding a theme, follow these steps:
-<<<<<<< HEAD
 
 -   Clone this repository.
 -   Add your component under `./src/fallback/components`. You can take the example of the `Basic` component in the same folder.
@@ -113,4 +112,3 @@ For adding a theme, follow these steps:
 -   Add your component under `./src/fallback/components`. You can take the example of the `Basic` component in the same folder.
 -   Import and export your component in the `./src/fallback/index.js` file.
 -   In order to test the compoent, follow these steps: - Run `npm run build` inside this (custom-error-boundary) project, - Create another project (example: Test) and implement a simple component like the `App` component shown above in the [Usage](#usage) section. - Copy the `lib` folder from the `custom-error-boundary` project and replace the `lib` folder inside the `./node_modules/custom-error-boundary` folder. - Send necessary props in your `CEB` to test your results. - Created fallback compoent should be functional. - The created components do not support props as of now.
-    > > > > > > > v2.0.0
