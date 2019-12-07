@@ -90,7 +90,7 @@ Notice that a `CustomFallbackUI` component has been added. This is because we ar
 
 -   Basic
 
-# Contributing
+# Contributing (deprecated)
 
 Fork the project, make changes and send me a pull request.
 
