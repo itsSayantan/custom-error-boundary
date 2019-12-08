@@ -6,7 +6,7 @@ Custom error boundary component for react.js applications.
 
 `$ npm install --save custom-error-boundary`
 
-# Usage
+# Usage (deprecated)
 
 Consider you have a component called `App` component which looks like this:
 
